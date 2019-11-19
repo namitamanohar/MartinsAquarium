@@ -1,0 +1,103 @@
+@import 'nav.css';
+body{
+  background-color:rgb(156, 200, 148); 
+}
+.center__button {
+  display: flex; 
+  justify-content: center;
+}
+button{
+  align-self: center;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.goldiefish{
+  border-radius: 25%;
+}
+h1{
+  font-family: 'Bebas Neue', cursive;
+}
+.fishies{
+  display: flex; 
+  flex-wrap: wrap;
+  flex-basis: 68% ;
+  justify-content: space-evenly;
+}
+.fishies__card{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 25%;
+  border: 2px dotted rgb(31, 76, 128); 
+  margin: 2px; 
+  padding: 5px; 
+  font-family: 'PT Sans', sans-serif;
+  border-radius: 25px;
+
+}
+aside{
+  flex-basis: 28%; 
+  border: 1px solid rgb(97, 22, 34); 
+  font-family: 'PT Sans', sans-serif;
+  margin: 2px; 
+  padding: 10px; 
+  border-radius: 25px; 
+}
+.location{
+  display:flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.location__card{ 
+  border: 2px solid rgb(126, 110, 141);
+  flex-basis: 25%;
+  margin-bottom: 5px;
+  padding: 5px; 
+  font-family: 'PT Sans', sans-serif;
+  border-radius: 25px;
+}
+.location__city{
+  display:flex; 
+  justify-content: center;
+}
+.location__latlong{
+  display:flex; 
+  justify-content: center;
+}
+.location__button{
+  display:flex; 
+  justify-content: center;
+}
+.quotes{
+  font-style: italic;
+  font-family: 'PT Sans', sans-serif;
+  border: 2px solid rgb(126, 110, 141);
+  border-radius: 25px; 
+  margin: 10px; 
+}
+.fish__name{
+  text-align: center;
+}
+.highlightFish{
+  background-color: rgb(25, 26, 94); 
+  color: rgb(236, 30, 219);
+}
+.tipBox{
+  /* border: 1px dotted rgb(235, 235, 109); 
+  padding: 5px;  */
+  font-weight: bold;
+}
+
+
+/* below 600px this kicks in */
+@media (max-width: 600px) {
+  .fishies {
+     flex-basis: 100%;
+  }
+
+  aside {
+     flex-basis: 100%;
+  }
+}

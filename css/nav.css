@@ -1,0 +1,17 @@
+nav span{
+  font-size: 32px; 
+  font-family: 'Bebas Neue', cursive;
+  }
+.nav__links{
+  float: right; 
+}
+  
+nav {
+  border: 2px solid gray;
+  box-shadow: 1px 2px 2px gray;
+  padding: 10px 8px;
+  background-color: beige;
+}
+a:hover{
+  color:palevioletred; 
+}
