@@ -13,53 +13,20 @@ const initializeLocationButtonEvents = () => {
   }
   // CAN'T TOUCH THIS - END
 
+// Get a reference to all buttons that start with "button--"
+const allDetailButtons = document.querySelectorAll("button[id^='button--']")
 
-  // You will be writing code below this line
-
-  // Show Bart's details when the button is clicked
-  document.querySelector("#button--Madrid").addEventListener(
-      "click",
-      theClickEvent => {
-          const theDialog = document.querySelector("#details--Madrid")
-          theDialog.showModal()
-      }
-  )
-  document.querySelector("#button--Nassau").addEventListener(
-    "click",
-    theClickEvent => {
-        const theDialog = document.querySelector("#details--Nassau")
-        theDialog.showModal()
-    }
-)
-document.querySelector("#button--Antananarivo").addEventListener(
-  "click",
-  theClickEvent => {
-      const theDialog = document.querySelector("#details--Antananarivo")
-      theDialog.showModal()
-  }
-)
-document.querySelector("#button--NosyBe").addEventListener(
-  "click",
-  theClickEvent => {
-      const theDialog = document.querySelector("#details--NosyBe")
-      theDialog.showModal()
-  }
-)
-document.querySelector("#button--Melbourne").addEventListener(
-  "click",
-  theClickEvent => {
-      const theDialog = document.querySelector("#details--Melbourne")
-      theDialog.showModal()
-  }
-)
-document.querySelector("#button--Manila").addEventListener(
-  "click",
-  theClickEvent => {
-      const theDialog = document.querySelector("#details--Manila")
-      theDialog.showModal()
-  }
-)
-
-
-    }
+// Add an event listener to each one
+for (const btn of allDetailButtons) {
+    btn.addEventListener(
+        "click",
+        theEvent => {
+            const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+            const theDialog = document.querySelector(dialogSiblingSelector)
+            theDialog.showModal()
+        }
+    )
+}
+  
+}
 export default initializeLocationButtonEvents

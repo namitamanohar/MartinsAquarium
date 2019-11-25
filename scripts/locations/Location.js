@@ -5,13 +5,13 @@ const LocationComponent = (location) =>{
     <p class="location__latlong">${location.latitude}, ${location.longitude}</p>
   <div class='location__button'>
     <button id='button--${location.city}'>Details</button>
+    <dialog class='dialog--location' id='details--${location.city}'>
+      <div> Location: ${location.region}</div>
+      <div> ${location.advice}</div>
+      <button class='button--close2' id='close-${location.city}'>Close Dialog</button>
+    </dialog>
   </div>
-  <dialog class='dialog--location' id='details--${location.city}'>
-    <div> Location: ${location.region}</div>
-    <div> ${location.advice}</div>
-    <button class='button--close2' id='close-${location.city}'>Close Dialog</button>
-  </dialog>
-  </section>
+    </section>
   `
 }
 export default LocationComponent

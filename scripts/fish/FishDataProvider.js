@@ -5,7 +5,7 @@ const fishCollection =[
     location:"Amazon Forest",
     length:"14", 
     food:["Smaller Fish"],
-    image: "goldie-fish.jpg"
+    image: "./images/piranha.jpg"
     },
   {
     name:"Guppy",
@@ -13,7 +13,7 @@ const fishCollection =[
     location:"NC River",
     length:"1.5", 
     food:["Flakes", "Sponges"],
-    image: "goldie-fish.jpg" 
+    image: "./images/guppy.jpg" 
     },
   {
     name:"Nemo",
@@ -21,7 +21,7 @@ const fishCollection =[
     location:"Carribean",
     length:"3", 
     food:["Algae","Crustaceans"],
-    image:"goldie-fish.jpg"
+    image:"./images/clownfish.jpg"
     },
   {
     name:"Dory",
@@ -29,7 +29,7 @@ const fishCollection =[
     location:"Great Barrier Reef",
     length:"2.5", 
     food:["Seaweed", "Krill"],
-    image:"goldie-fish.jpg"
+    image:"./images/blueTang.jpg"
     },
   {
     name:"Marlin",
@@ -37,7 +37,7 @@ const fishCollection =[
     location:"Carribean",
     length:"5", 
     food:["Algae", "Crustaceans"], 
-    image:"goldie-fish.jpg"
+    image:"./images/clownfish2.jpg"
     },
   {
     name:"Goldie",
@@ -45,7 +45,7 @@ const fishCollection =[
     location:"Petsmart",
     length:"2", 
     food:["Flakes", "Sponges"],
-    image:"goldie-fish.jpg"
+    image:"./images/golfish.jpg"
     }
 ]
 export const useFish = () => {
