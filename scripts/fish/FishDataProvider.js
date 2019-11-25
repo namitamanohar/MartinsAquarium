@@ -4,7 +4,7 @@ const fishCollection =[
     species:"Piranha",
     location:"Amazon Forest",
     length:"14", 
-    food:"Smaller Fish",
+    food:["Smaller Fish"],
     image: "goldie-fish.jpg"
     },
   {
@@ -29,7 +29,7 @@ const fishCollection =[
     location:"Great Barrier Reef",
     length:"2.5", 
     food:["Seaweed", "Krill"],
-    image:"blueTang.jpg"
+    image:"goldie-fish.jpg"
     },
   {
     name:"Marlin",

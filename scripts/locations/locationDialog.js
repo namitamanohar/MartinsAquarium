@@ -17,45 +17,45 @@ const initializeLocationButtonEvents = () => {
   // You will be writing code below this line
 
   // Show Bart's details when the button is clicked
-  document.querySelector("#button--location1").addEventListener(
+  document.querySelector("#button--Madrid").addEventListener(
       "click",
       theClickEvent => {
-          const theDialog = document.querySelector("#details--location1")
+          const theDialog = document.querySelector("#details--Madrid")
           theDialog.showModal()
       }
   )
-  document.querySelector("#button--location2").addEventListener(
+  document.querySelector("#button--Nassau").addEventListener(
     "click",
     theClickEvent => {
-        const theDialog = document.querySelector("#details--location2")
+        const theDialog = document.querySelector("#details--Nassau")
         theDialog.showModal()
     }
 )
-document.querySelector("#button--location3").addEventListener(
+document.querySelector("#button--Antananarivo").addEventListener(
   "click",
   theClickEvent => {
-      const theDialog = document.querySelector("#details--location3")
+      const theDialog = document.querySelector("#details--Antananarivo")
       theDialog.showModal()
   }
 )
-document.querySelector("#button--location4").addEventListener(
+document.querySelector("#button--NosyBe").addEventListener(
   "click",
   theClickEvent => {
-      const theDialog = document.querySelector("#details--location4")
+      const theDialog = document.querySelector("#details--NosyBe")
       theDialog.showModal()
   }
 )
-document.querySelector("#button--location5").addEventListener(
+document.querySelector("#button--Melbourne").addEventListener(
   "click",
   theClickEvent => {
-      const theDialog = document.querySelector("#details--location5")
+      const theDialog = document.querySelector("#details--Melbourne")
       theDialog.showModal()
   }
 )
-document.querySelector("#button--location6").addEventListener(
+document.querySelector("#button--Manila").addEventListener(
   "click",
   theClickEvent => {
-      const theDialog = document.querySelector("#details--location6")
+      const theDialog = document.querySelector("#details--Manila")
       theDialog.showModal()
   }
 )

@@ -1,19 +1,19 @@
 
 const addMouseOverLocationEventListeners =() => {
 
-  const fishCards=document.querySelectorAll(".location__card");
+  const locationCards=document.querySelectorAll(".location__card");
   
-  for (const card of fishCards){
+  for (const card of locationCards){
     card.addEventListener(
       "mouseover", 
       (theMouseOverEvent) => {
-        card.classList.add("highlightFish")
+        card.classList.add("highlightLocation")
       }
       
       )
   
     card.addEventListener("mouseout", theMouseOutEvent =>{
-      card.classList.remove("highlightFish")
+      card.classList.remove("highlightLocation")
 
     })
   }
